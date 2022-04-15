@@ -14,6 +14,11 @@ const Nav = ({ current}) => {
             <HomeOutlined />Home
           </Link>
         </Menu.Item>
+        <Menu.Item key='morepublic'>
+          <Link to={'/morepublic'}>
+            <HomeOutlined />More Public
+          </Link>
+        </Menu.Item>
         <Menu.Item key='profile'>
           <Link to='/profile'>
           <ProfileOutlined />Profile

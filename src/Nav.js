@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { HomeOutlined, ProfileOutlined, FileProtectOutlined } from
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined, InfoCircleOutlined } from
          '@ant-design/icons';
 
 const Nav = ({ current}) => {
@@ -11,22 +11,22 @@ const Nav = ({ current}) => {
         mode="horizontal">
         <Menu.Item key='home'>
           <Link to={'/'}>
-            <HomeOutlined />Home
+            <HomeOutlined />&nbsp;Home
           </Link>
         </Menu.Item>
         <Menu.Item key='morepublic'>
           <Link to={'/morepublic'}>
-            <HomeOutlined />More Public
+            <InfoCircleOutlined />&nbsp;More Public info
           </Link>
         </Menu.Item>
         <Menu.Item key='profile'>
           <Link to='/profile'>
-          <ProfileOutlined />Profile
+          <ProfileOutlined />&nbsp;Profile
           </Link>
         </Menu.Item>
         <Menu.Item key='protected'>
           <Link to='/protected'>
-            <FileProtectOutlined />Protected
+            <FileProtectOutlined />&nbsp;Protected
           </Link>
         </Menu.Item>
       </Menu>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { HomeOutlined, ProfileOutlined, FileProtectOutlined, InfoCircleOutlined, SmileOutlined } from
+import { HomeOutlined, ProfileOutlined, InfoCircleOutlined, SmileOutlined } from
          '@ant-design/icons';
 
 const Nav = ({ current}) => {

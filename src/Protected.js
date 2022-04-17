@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify';
 import Container from './Container';
 import { useNavigate } from 'react-router-dom';
+import { Button } from 'antd';
 
 const Protected = () => {
 
@@ -29,13 +30,13 @@ const Protected = () => {
       <h2>Thank you for signing up</h2>
       <div>
         <h2>You Clicked {count} times</h2>
-        <button onClick={() => setCount(count + 1)}>
+        <Button onClick={() => setCount(count + 1)} type='primary' size='large'>
           Click Me For More!!!
-        </button>
+        </Button>
         <br/><br/>
-        <button onClick={() => setCount(count - 1)}>
+        <Button onClick={() => setCount(count - 1)} type='primary' size='large'>
           Click Me For Less!!!
-        </button>
+        </Button>
       </div>
     </Container>
   );

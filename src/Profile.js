@@ -26,12 +26,10 @@ const Profile = () => {
   return (
     <Container>
       <h1>Sign in to View The Happy Counting App</h1>
-    <h2>Please use an email address for your user name</h2>
       <Authenticator>
       {({ signOut, user }) => (
         <main>
-          <h1>Hello {user.username}</h1>
-          <h2>Email: {user.attributes.email}</h2>
+          <h1>Hello {user.attributes.email}</h1>
           <Button onClick={signOut} type='primary' size='large'>Sign out</Button>
         </main>
       )}

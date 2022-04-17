@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { HomeOutlined, ProfileOutlined, FileProtectOutlined, InfoCircleOutlined } from
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined, InfoCircleOutlined, SmileOutlined } from
          '@ant-design/icons';
 
 const Nav = ({ current}) => {
@@ -26,7 +26,7 @@ const Nav = ({ current}) => {
         </Menu.Item>
         <Menu.Item key='protected'>
           <Link to='/protected'>
-            <FileProtectOutlined />&nbsp;Protected
+            <SmileOutlined />&nbsp;The Happy Counting App
           </Link>
         </Menu.Item>
       </Menu>

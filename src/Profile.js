@@ -25,8 +25,8 @@ const Profile = () => {
   };
   return (
     <Container>
-      <h1>Profile</h1>
-
+      <h1>Sign in to View The Happy Counting App</h1>
+    <h2>Please use an email address for your user name</h2>
       <Authenticator>
       {({ signOut, user }) => (
         <main>
